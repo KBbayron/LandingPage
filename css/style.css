@@ -1,0 +1,162 @@
+/*carrusel*/
+.carousel {
+    margin-top: -11vh;
+}
+.carousel-inner, .carousel-item img{
+    height: 80vmin; /* 80% de la altura de la pantalla */
+    object-fit: cover;
+    
+}
+
+@media(max-width: 500px) {
+    .carousel-inner, .carousel-item{
+        height: 120vmin!important;
+
+    }   
+}
+@media(max-width: 500px) {
+    .carousel-item img {
+        height: 100%;
+        object-fit: cover; /* Asegura que la imagen cubra toda la altura del contenedor */
+    }
+} 
+/* @media(max-width: 850px) {
+    .carousel-inner, .carousel-item{
+        height: 90vmin;
+
+    }
+} */
+@media(max-width: 850px) {
+    .carousel-item img {
+        height: 100%;
+        object-fit: cover; /* Asegura que la imagen cubra toda la altura del contenedor */
+    }
+} 
+
+/*navbar*/
+.navbar-1{
+    background-color: rgb(55, 128, 131) !important; 
+    border-bottom-left-radius: 25px !important;
+    border-bottom-right-radius: 25px !important;
+    height: 7vmin!important;
+}
+@media(max-width: 500px) {
+    .navbar{
+        max-width: 90vmin !important;
+        min-height: 18vmin !important;
+    }
+}
+@media(max-width: 850px) {
+    .navbar{
+        max-width: 90vmin;
+        min-height: 12vmin;
+    }
+} 
+/* @media(max-width: 991px) {
+    .navbar-toggler {  
+        width: 60px;
+        height: 65px;
+        margin-left: auto ;
+    }
+} */
+
+@media(max-width: 630px) {
+    .service{
+        min-width: 100%;
+    }
+}
+@media(max-width: 630px) {
+    .producto{
+        min-width: 100%;
+
+    }
+} 
+
+
+
+.info{
+    background-image: url(/img/index/section.jpg);
+    background-position: center left;
+    background-size: cover;
+    min-height: 80vh!important;
+    margin-bottom: 30vh;
+}
+
+@media(max-width: 630px) {
+    .info{
+        max-height: 30%;
+        background-position: center left;
+        background-size: 250%;
+        min-width: 80%;
+    }
+}
+
+.cut {
+    transform: scaleY(-1);
+}
+
+.cut2 {
+    transform: scaleX(-1);
+    margin-bottom: -1px;
+
+}
+/*cards*/
+.card-img-filter{
+    filter: brightness(0.5);
+    height: 45vh;
+    
+}
+.card{
+    transition-duration: 0.6s;
+    clip-path: polygon(
+        50% 0,
+        100% 0,
+        100% 50%,
+        100% 100%,
+        50% 100%,
+        0 100%,
+        0 50%,
+        0 0
+    );
+
+}
+.card-effect:hover .card{
+    clip-path: polygon(
+        50% 0,
+        50% 0,
+        100% 50%,
+        100% 50%,
+        50% 100%,
+        50% 100%,
+        0 50%,
+        0 50%
+    );
+
+}
+
+.card-img-overlay{
+    transition-duration: 0.6s;
+    padding: 0; /* Elimina el padding del contenedor de la tarjeta */
+
+}
+.card-effect:hover .card-img-overlay{
+    transform: scale(0.9);
+
+}
+
+
+
+.square{
+    background-color: rgba(55, 129, 131, 0.247);
+    border-top-left-radius: 50px ;
+    border-top-right-radius: 50px ;
+    border-bottom-left-radius: 50px ;
+    border-bottom-right-radius: 50px ;
+}
+@media(max-width: 630px) {
+    .square{
+        max-width: 90%!important;
+        align-items: center;
+
+    }
+}
