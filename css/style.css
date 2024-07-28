@@ -93,7 +93,7 @@
 
 
 .info{
-    background-image: url(/img/index/section.jpg);
+    background-image: url(/img/index/info/efe-kurnaz-RnCPiXixooY-unsplash.jpg);
     background-position: center left;
     background-size: cover;
     min-height: 80vh!important;
@@ -161,7 +161,16 @@
     transform: scale(0.9);
 
 }
-
+@media(max-width: 850px) {
+    .card-img {
+        height: 50vmin !important;
+    }
+}
+@media(max-width: 500px) {
+    .card-img {
+        height: 90vmin !important;
+    }
+}
 
 
 .square{
