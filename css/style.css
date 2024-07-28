@@ -1,7 +1,4 @@
 /*carrusel*/
-.carousel {
-    margin-top: -11vh;
-}
 .carousel-inner, .carousel-item img{
     height: 80vmin; /* 80% de la altura de la pantalla */
     object-fit: cover;
@@ -11,45 +8,57 @@
 @media(max-width: 500px) {
     .carousel-inner, .carousel-item{
         height: 120vmin!important;
-
     }   
 }
+
 @media(max-width: 500px) {
     .carousel-item img {
         height: 100%;
         object-fit: cover; /* Asegura que la imagen cubra toda la altura del contenedor */
     }
 } 
-/* @media(max-width: 850px) {
+@media(max-width: 850px) {
     .carousel-inner, .carousel-item{
-        height: 90vmin;
+        height: 70vmin;
 
     }
-} */
+}
 @media(max-width: 850px) {
     .carousel-item img {
         height: 100%;
         object-fit: cover; /* Asegura que la imagen cubra toda la altura del contenedor */
     }
 } 
-
+.background {
+    position: relative;
+    top: 0;
+}
 /*navbar*/
-.navbar-1{
+.navbar{
     background-color: rgb(55, 128, 131) !important; 
     border-bottom-left-radius: 25px !important;
     border-bottom-right-radius: 25px !important;
-    height: 7vmin!important;
+    height: 7%!important;
+    margin-top: -120vmin; 
+    
 }
+/* Asegurarse de que el logo y los enlaces tengan suficiente espacio en dispositivos pequeños */
+.navbar-brand, .nav-link {
+    margin: 0 10px;
+}
+
 @media(max-width: 500px) {
     .navbar{
         max-width: 90vmin !important;
         min-height: 18vmin !important;
+        margin-top: -80vmin; 
     }
 }
 @media(max-width: 850px) {
     .navbar{
-        max-width: 90vmin;
-        min-height: 12vmin;
+        max-width: 90vmin !important;
+        min-height: 5vmin !important;
+        margin-top: -140vmin; 
     }
 } 
 /* @media(max-width: 991px) {
@@ -59,6 +68,15 @@
         margin-left: auto ;
     }
 } */
+
+.sec-1{
+    margin-top: 120vmin; 
+}
+@media(max-width: 830px) {
+    .sec-1{
+        margin-top: 140vmin; 
+    }
+}
 
 @media(max-width: 630px) {
     .service{
