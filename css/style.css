@@ -32,7 +32,7 @@
 @media(max-width: 500px) {
     .navbar{
         max-width: 90vmin;
-        min-height: 14vmin;
+        min-height: 12vmin;
     }
 }
 @media(max-width: 850px) {
@@ -144,7 +144,7 @@
     }
 }
 .info{
-    background-image: url(/img/index/info/joel-filipe-Mbf3xFiC1Zo-unsplash.jpg);
+    background-image: url(/img/index/info/aaa.jpg);
     background-position: center;
     background-size: cover;
     min-height: 80vh;
@@ -152,7 +152,7 @@
 }
 
 .square{
-    background-color: rgba(55, 129, 131, 0.247);
+    background-color: rgba(55, 129, 131, 0.568);
     border-top-left-radius: 50px ;
     border-top-right-radius: 50px ;
     border-bottom-left-radius: 50px ;
