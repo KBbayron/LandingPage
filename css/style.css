@@ -24,16 +24,15 @@
 
 /*navbar*/
 .navbar{
-    background-color: rgb(55, 128, 131) !important; 
-    border-bottom-left-radius: 25px !important;
-    border-bottom-right-radius: 25px !important;
-
+    background-color: rgb(55, 128, 131); 
+    border-bottom-left-radius: 25px ;
+    border-bottom-right-radius: 25px ;
     margin-top: -120vmin;
 }
 @media(max-width: 500px) {
     .navbar{
-        max-width: 90vmin !important;
-        min-height: 18vmin !important;
+        max-width: 90vmin;
+        min-height: 14vmin;
     }
 }
 @media(max-width: 850px) {
@@ -42,19 +41,13 @@
         min-height: 7vmin;
     }
 } 
-/* @media(max-width: 991px) {
-    .navbar-toggler {  
-        width: 60px;
-        height: 65px;
-        margin-left: auto ;
-    }
-} */
+
 .sec-1{
     margin-top: 120vmin;
 }
-@media(max-width: 850px) {
+@media(max-width: 500px) {
     .sec-1{
-        margin-top: 100vmin
+        margin-top: 140vmin
     }
 }
 @media(max-width: 850px) {
@@ -75,14 +68,6 @@
 } 
 
 
-
-.info{
-    background-image: url(/img/index/info/joel-filipe-Mbf3xFiC1Zo-unsplash.jpg);
-    background-position: center left;
-    background-size: cover;
-    min-height: 80vh!important;
-    margin-bottom: 30vh;
-}
 
 @media(max-width: 630px) {
     .info{
@@ -148,7 +133,7 @@
 
 @media(max-width: 850px) {
     .card-img-filter{
-        height: 35vh;
+        height: 25vh;
 
     }
 }
@@ -158,7 +143,13 @@
 
     }
 }
+.info{
+    background-image: url(/img/index/info/joel-filipe-Mbf3xFiC1Zo-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 80vh;
 
+}
 
 .square{
     background-color: rgba(55, 129, 131, 0.247);
