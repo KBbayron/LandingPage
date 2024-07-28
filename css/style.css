@@ -1,4 +1,7 @@
 /*carrusel*/
+.carousel {
+    margin-top: -11vh;
+}
 .carousel-inner, .carousel-item img{
     height: 80vmin; /* 80% de la altura de la pantalla */
     object-fit: cover;
@@ -8,57 +11,35 @@
 @media(max-width: 500px) {
     .carousel-inner, .carousel-item{
         height: 120vmin!important;
+        object-fit: cover;
     }   
 }
 
-@media(max-width: 500px) {
+@media(max-width: 850px) {
     .carousel-item img {
         height: 100%;
         object-fit: cover; /* Asegura que la imagen cubra toda la altura del contenedor */
     }
 } 
-@media(max-width: 850px) {
-    .carousel-inner, .carousel-item{
-        height: 70vmin;
 
-    }
-}
-@media(max-width: 850px) {
-    .carousel-item img {
-        height: 100%;
-        object-fit: cover; /* Asegura que la imagen cubra toda la altura del contenedor */
-    }
-} 
-.background {
-    position: relative;
-    top: 0;
-}
 /*navbar*/
 .navbar{
     background-color: rgb(55, 128, 131) !important; 
     border-bottom-left-radius: 25px !important;
     border-bottom-right-radius: 25px !important;
-    height: 7%!important;
-    margin-top: -120vmin; 
-    
-}
-/* Asegurarse de que el logo y los enlaces tengan suficiente espacio en dispositivos pequeños */
-.navbar-brand, .nav-link {
-    margin: 0 10px;
-}
 
+    margin-top: -120vmin;
+}
 @media(max-width: 500px) {
     .navbar{
         max-width: 90vmin !important;
         min-height: 18vmin !important;
-        margin-top: -80vmin; 
     }
 }
 @media(max-width: 850px) {
     .navbar{
-        max-width: 90vmin !important;
-        min-height: 5vmin !important;
-        margin-top: -140vmin; 
+        max-width: 90vmin;
+        min-height: 7vmin;
     }
 } 
 /* @media(max-width: 991px) {
@@ -68,16 +49,19 @@
         margin-left: auto ;
     }
 } */
-
 .sec-1{
-    margin-top: 120vmin; 
+    margin-top: 120vmin;
 }
-@media(max-width: 830px) {
+@media(max-width: 850px) {
     .sec-1{
-        margin-top: 140vmin; 
+        margin-top: 100vmin
     }
 }
-
+@media(max-width: 850px) {
+    .sec-1{
+        margin-top: 100vmin
+    }
+}
 @media(max-width: 630px) {
     .service{
         min-width: 100%;
@@ -93,7 +77,7 @@
 
 
 .info{
-    background-image: url(/img/index/info/efe-kurnaz-RnCPiXixooY-unsplash.jpg);
+    background-image: url(/img/index/info/joel-filipe-Mbf3xFiC1Zo-unsplash.jpg);
     background-position: center left;
     background-size: cover;
     min-height: 80vh!important;
@@ -161,14 +145,17 @@
     transform: scale(0.9);
 
 }
+
 @media(max-width: 850px) {
-    .card-img {
-        height: 50vmin !important;
+    .card-img-filter{
+        height: 35vh;
+
     }
 }
 @media(max-width: 500px) {
-    .card-img {
-        height: 90vmin !important;
+    .card-img-filter{
+        height: 40vh;
+
     }
 }
 
